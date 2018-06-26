@@ -144,7 +144,7 @@ var ANALYTICS = (function () {
     var setupGoogle = function() {
         embedGa();
         setupVizAnalytics();
-        setupDotOrgAnalytics();
+        // setupDotOrgAnalytics();
      }
 
 
@@ -318,8 +318,8 @@ var ANALYTICS = (function () {
     }
 
     setupGoogle();
-    setupComscore();
-    setupNielson();
+    // setupComscore();
+    // setupNielson();
 
     return {
         'setupChartbeat': setupChartbeat,

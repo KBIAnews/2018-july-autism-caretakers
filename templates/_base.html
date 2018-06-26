@@ -30,7 +30,6 @@
     {{ JS.push('js/lib/modernizr.js') }}
     {{ JS.push('js/lib/cookie.js') }}
     {{ JS.push('js/lib/es6-promise.js') }}
-    {{ JS.push('js/lib/cross-storage-client.js') }}
     {{ JS.push('js/app_config.js') }}
     {{ JS.push('js/analytics.js') }}
     {{ JS.render('js/app-header.min.js') }}
@@ -40,17 +39,17 @@
     {% block nav %}
     <nav role="navigation">
         <ul class="site-links">
-            <li class="npr"><a href="http://npr.org"><img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR" /></a></li>
-            <li class="news"><a href="http://www.npr.org/sections/news/">News</a></li>
-            <li class="arts"><a href="http://www.npr.org/sections/arts/">Arts &amp; Life</a></li>
-            <li class="music"><a href="http://www.npr.org/music/">Music</a></li>
-            <li class="listen"><a href="http://www.npr.org/listen/">Listen</a></li>
+            <li class="npr"><a href="http://kbia.org"><img src="https://s3.amazonaws.com/media.kbia.org/logos/kbia-blue.png" alt="KBIA" /></a></li>
+            <li class="news"><a href="http://kbia.org/river?page=0">News</a></li>
+            <li class="arts"><a href="http://kbia.org/term/arts-and-culture">Arts &amp; Culture</a></li>
+            <li class="music"><a href="http://www.kmuc.org">Music</a></li>
+            <li class="listen"><a href="http://kbia.org/listen">Listen</a></li>
         </ul>
         <ul class="site-links-2">
-            <li class="stations"><a href="http://www.npr.org/templates/stations/stations/">Stations</a></li>
-            <li class="donate"><a href="http://www.npr.org/stations/donate/index.php">Donate</a></li>
-            <li class="shop"><a href="http://shop.npr.org">Shop</a></li>
-        </ul>
+<!--             <li class="stations"><a href="http://www.npr.org/templates/stations/stations/">Stations</a></li> -->
+            <li class="donate"><a href="https://kbia.missouri.edu/alleg/WebModule/Donate.aspx?P=MAIN&PAGETYPE=PLG&CHECK=r7ZyK9McKTWqK20krF35cqUOstgWaB20">Donate</a></li>
+<!--             <li class="shop"><a href="http://shop.npr.org">Shop</a></li>
+ -->        </ul>
     </nav>
     {% endblock nav %}
 
@@ -64,23 +63,21 @@
     <footer>
         <div class="primary">
             <ul>
-                <li><a href="http://www.npr.org" data-action="Click Logo"><img src="http://media.npr.org/chrome/news/nprlogo_138x46.gif" alt="NPR Logo"></a></li>
-                <li class="news"><a href="http://www.npr.org/sections/news/">News</a></li>
-                <li class="artslife"><a href="http://www.npr.org/sections/arts/">Arts &amp; Life</a></li>
-                <li class="music"><a href="http://www.npr.org/music/">Music</a></li>
-                <li class="programs"><a href="http://www.npr.org/programs/">Programs</a></li>
-                <li class="listen"><a href="http://www.npr.org/listen/">Listen</a></li>
-                <li class="about"><a href="http://www.npr.org/about/">About</a></li>
+                <li><a href="http://www.npr.org" data-action="Click Logo"><img src="https://s3.amazonaws.com/media.kbia.org/logos/kbia-blue.png" alt="KBIA Logo"></a></li>
+                            <li class="news"><a href="http://kbia.org/river?page=0">News</a></li>
+            <li class="arts"><a href="http://kbia.org/term/arts-and-culture">Arts &amp; Culture</a></li>
+            <li class="music"><a href="http://www.kmuc.org">Music</a></li>
+            <li class="listen"><a href="http://kbia.org/listen">Listen</a></li>
             </ul>
         </div>
         <div class="secondary">
-            <p>&copy;2016 NPR</p>
+            <p>&copy;2018 KBIA</p>
             <ul>
-                <li id="footerContact"><a href="http://help.npr.org/npr/includes/customer/npr/custforms/contactus.aspx">Contact</a></li>
-                <li><a href="http://www.npr.org/about/termsofuse.html">Terms of Use</a></li>
+                <li id="footerContact"><a href="http://kbia.org/contact-kbia">Contact</a></li>
+<!--                 <li><a href="http://www.npr.org/about/termsofuse.html">Terms of Use</a></li>
                 <li><a href="http://www.npr.org/about/privacypolicy.html">Privacy</a></li>
                 <li><a href="http://thin.npr.org/">Text-Only</a></li>
-            </ul>
+            </ul> -->
         </div>
     </footer>
     {% endblock footer %}
