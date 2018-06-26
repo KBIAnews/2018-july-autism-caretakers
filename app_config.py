@@ -27,7 +27,7 @@ PROJECT_FILENAME = '2018_july_autism_caretakers'
 
 # The name of the repository containing the source
 REPOSITORY_NAME = '2018-july-autism-caretakers'
-GITHUB_USERNAME = 'nprapps'
+GITHUB_USERNAME = 'KBIAnews'
 REPOSITORY_URL = 'git@github.com:%s/%s.git' % (GITHUB_USERNAME, REPOSITORY_NAME)
 REPOSITORY_ALT_URL = None # 'git@bitbucket.org:nprapps/%s.git' % REPOSITORY_NAME'
 
@@ -38,11 +38,11 @@ ASSETS_SLUG = '2018-july-autism-caretakers'
 """
 DEPLOYMENT
 """
-PRODUCTION_S3_BUCKET = 'apps.npr.org'
+PRODUCTION_S3_BUCKET = 'apps.kbia.org'
 
-STAGING_S3_BUCKET = 'stage-apps.npr.org'
+STAGING_S3_BUCKET = 'stage-apps.kbia.org'
 
-ASSETS_S3_BUCKET = 'assets.apps.npr.org'
+ASSETS_S3_BUCKET = 'assets.apps.kbia.org'
 
 DEFAULT_MAX_AGE = 20
 
@@ -105,13 +105,13 @@ SHARE_URL = 'http://%s/%s/' % (PRODUCTION_S3_BUCKET, PROJECT_SLUG)
 SERVICES
 """
 NPR_GOOGLE_ANALYTICS = {
-    'ACCOUNT_ID': 'UA-5828686-4',
+    'ACCOUNT_ID': 'UA-24704798-11',
     'DOMAIN': PRODUCTION_S3_BUCKET,
     'TOPICS': '' # e.g. '[1014,3,1003,1002,1001]'
 }
 
 VIZ_GOOGLE_ANALYTICS = {
-    'ACCOUNT_ID': 'UA-5828686-75'
+    'ACCOUNT_ID': 'UA-71696131-1'
 }
 
 """
