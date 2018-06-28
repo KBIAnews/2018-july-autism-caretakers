@@ -4,6 +4,10 @@ div.home-card-front{
     top: 50%;
     transform: translateY(50%);
 
+    @media screen and (max-width: $small-screen-width){
+        transform: translateY(20%);
+      }
+
     @include fade-in-page-load(1s, 0.2s);
 
     h1{
