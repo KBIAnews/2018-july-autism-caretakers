@@ -11,19 +11,45 @@ $(document).ready(function(){
     max, value;
 
     /* Set the max scrollable area */
-    max = docHeight - winHeight;
-    progressBar.attr('max', max);
+    function initializeScrollProgress(){
+        max = docHeight - winHeight;
+        progressBar.attr('max', max);
+    }
 
-    $(document).ready(function(){
-        resizeCards();
+    initializeScrollProgress();
 
-        $('aside').fadeTo( 1000, 0 );
-    });
-
-    $(document).scroll(function(){
-        $('aside:in-viewport').fadeTo( 1500, 1 );
-
+    /* Render scrollbar */
+    function renderScrollProgress(){
         value = $(window).scrollTop();
         progressBar.attr('value', value);
+    }
+
+    /* Initialize hidden asides. */
+    function initializeAsides(){
+        $('aside').fadeTo( 1000, 0 );
+    }
+
+    initializeAsides();
+
+    /* fade in asides when visible */
+    function revealAsides(){
+        $('aside:in-viewport').fadeTo( 1500, 1 );
+    }
+
+    resizeCards();
+
+
+    $(document).scroll(function(){
+
+        revealAsides();
+
+        renderScrollProgress();
+    });
+
+    $(window).resize(function(){
+        resizeCards();
+        initializeScrollProgress();
+        renderScrollProgress();
     });
 });
+
