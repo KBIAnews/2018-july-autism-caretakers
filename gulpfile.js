@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	compass = require('gulp-compass'),
+	webserver = require('gulp-webserver'),
 	shell = require('gulp-shell');
 
 gulp.task('test', function(){
@@ -39,7 +40,7 @@ gulp.task('html', function(){
 
 // This task will only work for KBIA.
 gulp.task('upload', shell.task([
-	'aws s3 cp build s3://apps.kbia.org/pemiscot-hospital --recursive --profile kbia'
+	'aws s3 cp build s3://apps.kbia.org/2018-july-autism-caregivers --recursive --profile kbia'
 ]));
 
 gulp.task('build', ['img','sass', 'js', 'html']);
@@ -53,4 +54,19 @@ gulp.task('watch',['build'], function(){
 	gulp.watch('components/**/*.js',['js']);
 	gulp.watch('components/**/*.html',['html']);
 	gulp.watch('components/**/*.jpg',['img']);
+});
+
+gulp.task('serve',['build'], function(){
+	gutil.log('Gulp will say that this task has finished, but don\'t believe its dirty lies.');
+	gutil.log('Hit \^c to actually exit watch mode.');
+	gulp.src('build')
+		.pipe(webserver({
+			livereload: true,
+			directorylisting: true,
+			open: true
+		}))
+	gulp.watch('components/**/*.js',['js']);
+	gulp.watch('components/**/*.html',['html']);
+	gulp.watch('components/**/*.jpg',['img']);
+    gulp.watch('components/**/*.scss',['sass']);
 });
