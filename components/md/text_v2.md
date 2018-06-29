@@ -39,7 +39,7 @@ She ditched the van and chased him down, catching him 15 feet from the road.
  
 “He was yelling, ‘Cars, cars, cars!’” Audra said. “It was that simple. He wanted the cars, and he was gonna go get the cars on the highway.”
  
-A 2012 study from the American Academy of Pediatrics surveyed more than 1,200 children with autism and found nearly half had tried to run away after age 4. Of those who went missing, “24 percent were in danger of drowning and 65 percent were in danger of traffic injury.”
+A [2012 study](http://pediatrics.aappublications.org/content/130/5/870) from the American Academy of Pediatrics surveyed more than 1,200 children with autism and found nearly half had tried to run away after age 4. Of those who went missing, “24 percent were in danger of drowning and 65 percent were in danger of traffic injury.”
  
 Jacob is always looking for ways to escape, meaning that Audra must keep all doors and windows secure.
  
@@ -109,10 +109,8 @@ After being diagnosed with Asperger Syndrome as a junior in high school and atte
 “It was the anger,” Fern said. “It wasn’t Norma; it was the anger.”
  
 [Insert Video Three]
-“You’d be doing it, too”
+## “You’d be doing it, too”
 With a child’s future independence often uncertain, autism caregivers can grapple with the prospect of caring for their child indefinitely.
-
-
 
 Tara doesn’t expect her son to ever move out.
 
