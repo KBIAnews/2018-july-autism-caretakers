@@ -172,6 +172,14 @@ article {
     margin-bottom: 1rem;
   }
 
+  p.wider {
+    @include constrained-content;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+    max-width: 1300px;
+  }
+
   h2{
     @include constrained-content;
 
