@@ -38,6 +38,17 @@ $(document).ready(function(){
 
     resizeCards();
 
+    // ONLY for projects with significant Pym.js assets:
+    //   A special second progress initialize and render
+    //   3.5 sec after document ready,
+    //   hopefully after they've loaded in.
+    setTimeout(function(){
+        console.log("active.");
+        winHeight = $(window).height(); 
+        docHeight = $(document).height();
+        initializeScrollProgress();
+        renderScrollProgress();
+    }, 3500);
 
     $(document).scroll(function(){
 
