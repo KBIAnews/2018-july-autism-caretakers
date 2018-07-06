@@ -5,6 +5,17 @@ $(document).ready(function(){
 
     var homeMap = {};
 
+    function debounce(fn, delay) {
+        var timer = null;
+        return function () {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                fn.apply(context, args);
+            }, delay);
+        };
+    }
+
     var winHeight = $(window).height(), 
     docHeight = $(document).height(),
     progressBar = $('progress'),
@@ -46,21 +57,20 @@ $(document).ready(function(){
         console.log("active.");
         winHeight = $(window).height(); 
         docHeight = $(document).height();
-        initializeScrollProgress();
-        renderScrollProgress();
+        // initializeScrollProgress();
+        // renderScrollProgress();
     }, 3500);
 
-    $(document).scroll(function(){
+    // $(document).scroll(function(){
+    //     revealAsides();
 
-        revealAsides();
-
-        renderScrollProgress();
-    });
+    //     renderScrollProgress();
+    // });
 
     $(window).resize(function(){
-        resizeCards();
-        initializeScrollProgress();
-        renderScrollProgress();
+            resizeCards();
+            initializeScrollProgress();
+            renderScrollProgress();
     });
 });
 

@@ -22,6 +22,10 @@ div.home-cards-contain{
     -o-background-size: cover;
     background-size: cover;
 
+    @media screen and (max-width: $medium-screen-width) {
+      background: url(../img/walking-prim-mobile.jpg) no-repeat fixed top center;
+    }
+
     div.home-container {
       color: $project-text-dark;
 
