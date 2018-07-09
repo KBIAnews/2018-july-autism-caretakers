@@ -28,6 +28,7 @@ $(document).ready(function(){
     }
 
     initializeScrollProgress();
+    progressBar.attr('value', 0);
 
     /* Render scrollbar */
     function renderScrollProgress(){
@@ -70,7 +71,7 @@ $(document).ready(function(){
     $(window).resize(function(){
             resizeCards();
             initializeScrollProgress();
-            renderScrollProgress();
+            // renderScrollProgress();
     });
 });
 
